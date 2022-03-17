@@ -6,4 +6,8 @@ A WordPress plugin that gets data from a public API and display it using a short
 
 ### Shortcode
 
-Add the following shortcode in the editor of your choice [apiwines]
+Add the following shortcode in the editor of your choice:
+
+```bash
+[apiwines]
+```

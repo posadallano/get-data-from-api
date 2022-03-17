@@ -1,0 +1,8 @@
+.table-data img {
+    width: 20px;
+    height: 40px;
+}
+.table-data th {
+    background-color: red;
+    color: white;
+}

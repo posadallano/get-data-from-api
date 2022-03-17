@@ -1,5 +1,17 @@
 <?php
 
+// Filtro para agregar contenido a una página de WordPress
+add_filter('the_content', 'dcms_add_custom_content');
+
+// Agregamos contenido sólo a la página con el título "Contenido Vinos"
+function dcms_add_custom_content($content){
+
+	if ( ! is_page( 17 ) ) return $content;
+
+	$html = gdfa_get_data_api();
+	return $content.$html;
+}
+
 // Fetch data from a public API
 function gdfa_get_data_api(){
 	$url = 'https://api.sampleapis.com/wines/port';

@@ -18,9 +18,13 @@ if ( !class_exists( 'GetDataApi' ) ) {
         public static function get_api_data() {
             require_once( plugin_dir_path( __FILE__ ) . 'includes/fetch-content.php' );
         }
+        public static function load_shortcode() {
+            require_once( plugin_dir_path( __FILE__ ) . 'includes/shortcode.php' );
+        }
     }
  
     GetDataApi::get_api_data();
+    GetDataApi::load_shortcode();
 }
 
 // Load CSS

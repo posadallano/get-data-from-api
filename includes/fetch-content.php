@@ -1,9 +1,5 @@
 <?php
 
-// Add shortcode: [apiwines]
-add_shortcode( 'apiwines', 'gdfa_get_data_api' );
-
-
 // Fetch data from a public API
 function gdfa_get_data_api(){
 	$url = 'https://api.sampleapis.com/wines/port';
